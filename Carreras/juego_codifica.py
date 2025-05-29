@@ -3,10 +3,6 @@ import sys
 
 pygame.init()
 
-
-SCREEN = pygame.display.set_mode((800,600))
-pygame.display.set_caption("Menu")
-
 WIDTH, HEIGTH = 610, 730
 screen = pygame.display.set_mode((WIDTH, HEIGTH))
 pygame.display.set_caption("CARRO INSANO")
@@ -25,8 +21,6 @@ car_speed = 7
 def draw_text(text, x, y, color=(255, 255, 255)):
     img = font.render(text, True, color)
     screen.blit(img, (x,y))
-
-obstaculo = pygame.sprite.Sprite()
 
 
 while True:
